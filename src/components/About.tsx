@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 import { Lightbulb, Star, RotateCcw, Shield } from 'lucide-react';
@@ -32,7 +31,7 @@ const About = () => {
       name: "Eduardo Carballo Gais",
       role: "CEO & Fundador",
       experience: "10+ años en transformación digital",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
+      image: "/lovable-uploads/45129343-6bda-409d-9748-e947cd41d627.png"
     },
     {
       name: "Carlos Mendoza",
