@@ -13,7 +13,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="inicio" className="min-h-screen flex items-center justify-center relative pt-20" style={{
+    <section id="inicio" className="min-h-screen flex items-center justify-center relative pt-20 font-corporate" style={{
       backgroundImage: `url('/lovable-uploads/eb7debac-83a1-41c0-9cfa-f5f559e86f8c.png')`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
@@ -25,34 +25,41 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 animate-fade-in">
-            <h1 className="text-4xl md:text-6xl font-bold text-carvil-navy-800 leading-tight">
+            <h1 className="text-4xl md:text-6xl font-bold text-carvil-navy-800 leading-tight font-corporate">
               Transformamos tu negocio con 
               <span className="text-carvil-blue-500 block">soluciones tecnológicas guiadas por IA</span>
             </h1>
-            <p className="text-xl text-carvil-steel-700 leading-relaxed text-zinc-950">
+            <p className="text-xl text-carvil-steel-700 leading-relaxed text-zinc-950 font-corporate">
               Somos CARVIL Technology Solutions, tu socio estratégico en la transformación digital empresarial. 
               Ofrecemos tecnología innovadora y adaptable para impulsar tu crecimiento.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button onClick={() => scrollToSection('servicios')} className="bg-gradient-carvil text-white px-8 py-3 text-lg hover:shadow-lg transition-all hover:shadow-carvil-navy-200">
+              <Button 
+                onClick={() => scrollToSection('servicios')} 
+                className="bg-gradient-carvil text-white px-8 py-3 text-lg hover:shadow-lg transition-all hover:shadow-carvil-navy-200 font-corporate"
+              >
                 Explorar Servicios
               </Button>
-              <Button onClick={() => scrollToSection('contacto')} variant="outline" className="border-carvil-blue-500 text-carvil-blue-500 hover:bg-carvil-blue-50 px-8 py-3 text-lg">
+              <Button 
+                onClick={() => scrollToSection('contacto')} 
+                variant="outline" 
+                className="border-carvil-blue-500 text-carvil-blue-500 hover:bg-carvil-blue-50 px-8 py-3 text-lg font-corporate"
+              >
                 Contactar Ahora
               </Button>
             </div>
             <div className="grid grid-cols-3 gap-6 pt-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-carvil-navy-600">100+</div>
-                <div className="text-carvil-steel-600 bg-zinc-950">Proyectos</div>
+                <div className="text-3xl font-bold text-carvil-navy-600 font-corporate">100+</div>
+                <div className="text-carvil-steel-600 font-corporate">Proyectos</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-carvil-navy-600">5+</div>
-                <div className="text-carvil-steel-600 bg-zinc-950">Años</div>
+                <div className="text-3xl font-bold text-carvil-navy-600 font-corporate">5+</div>
+                <div className="text-carvil-steel-600 font-corporate">Años</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-carvil-navy-600">24/7</div>
-                <div className="text-carvil-steel-600 bg-zinc-950">Soporte</div>
+                <div className="text-3xl font-bold text-carvil-navy-600 font-corporate">24/7</div>
+                <div className="text-carvil-steel-600 font-corporate">Soporte</div>
               </div>
             </div>
           </div>
