@@ -50,11 +50,11 @@ const Projects = () => {
   ];
 
   return (
-    <section id="proyectos" className="py-20 bg-gray-50">
+    <section id="proyectos" className="py-20 bg-gray-50 font-corporate">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Nuestros Proyectos</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4 font-corporate">Nuestros Proyectos</h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto font-corporate">
             Descubre algunos de los proyectos que hemos desarrollado para empresas de diferentes sectores, 
             transformando sus procesos y potenciando su crecimiento digital.
           </p>
@@ -70,20 +70,20 @@ const Projects = () => {
                   className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                 />
                 <div className="absolute top-4 left-4">
-                  <span className="bg-ecg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                  <span className="bg-carvil-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium font-corporate">
                     {project.category}
                   </span>
                 </div>
               </div>
               
               <CardHeader>
-                <CardTitle className="text-xl text-gray-900 group-hover:text-ecg-blue-600 transition-colors">
+                <CardTitle className="text-xl text-gray-900 group-hover:text-carvil-blue-600 transition-colors font-corporate">
                   {project.title}
                 </CardTitle>
               </CardHeader>
               
               <CardContent className="space-y-4">
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-600 text-sm leading-relaxed font-corporate">
                   {project.description}
                 </p>
                 
@@ -91,7 +91,7 @@ const Projects = () => {
                   {project.tech.map((tech, techIndex) => (
                     <span 
                       key={techIndex}
-                      className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium"
+                      className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium font-corporate"
                     >
                       {tech}
                     </span>
@@ -100,7 +100,7 @@ const Projects = () => {
                 
                 <Button 
                   variant="outline" 
-                  className="w-full border-ecg-blue-600 text-ecg-blue-600 hover:bg-ecg-blue-50"
+                  className="w-full border-carvil-blue-600 text-carvil-blue-600 hover:bg-carvil-blue-50 font-corporate"
                 >
                   Ver Detalles
                 </Button>
@@ -110,7 +110,7 @@ const Projects = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Button className="bg-gradient-blue text-white px-8 py-3">
+          <Button className="bg-gradient-carvil text-white px-8 py-3 font-corporate">
             Ver Todos los Proyectos
           </Button>
         </div>
