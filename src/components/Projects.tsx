@@ -1,46 +1,64 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+
 const Projects = () => {
-  const projects = [{
-    title: "Sistema ERP Retail",
-    category: "Solución Global",
-    description: "Implementación completa de sistema ERP para cadena de tiendas con 15 sucursales, integrando inventarios, ventas, finanzas y RRHH.",
-    tech: ["React", "Node.js", "PostgreSQL", "AWS"],
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop"
-  }, {
-    title: "App Móvil Logística",
-    category: "Aplicación Móvil",
-    description: "Aplicación móvil para gestión de entregas en tiempo real con geolocalización y notificaciones push.",
-    tech: ["React Native", "Firebase", "Google Maps API"],
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=250&fit=crop"
-  }, {
-    title: "Plataforma E-learning",
-    category: "Desarrollo Web",
-    description: "Portal educativo con sistema de videoconferencias, evaluaciones automáticas y seguimiento de progreso.",
-    tech: ["Vue.js", "WebRTC", "MongoDB", "Socket.io"],
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=250&fit=crop"
-  }, {
-    title: "Dashboard Analytics",
-    category: "Inteligencia de Datos",
-    description: "Sistema de análisis de datos con visualizaciones interactivas para toma de decisiones empresariales.",
-    tech: ["D3.js", "Python", "FastAPI", "Redis"],
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=250&fit=crop"
-  }, {
-    title: "Infraestructura Cloud",
-    category: "Solución de Infraestructura",
-    description: "Migración completa a la nube con alta disponibilidad, escalabilidad automática y respaldo automatizado.",
-    tech: ["AWS", "Docker", "Kubernetes", "Terraform"],
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=250&fit=crop"
-  }, {
-    title: "Sistema de Seguridad",
-    category: "Ciberseguridad",
-    description: "Implementación de sistema de seguridad multicapa con autenticación biométrica y monitoreo 24/7.",
-    tech: ["Blockchain", "Biometrics API", "Machine Learning"],
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=250&fit=crop"
-  }];
-  return <section id="proyectos" className="py-20 font-corporate bg-slate-950">
-      <div className="container mx-auto px-4">
+  const projects = [
+    {
+      title: "Sistema ERP Retail",
+      category: "Solución Global",
+      description: "Implementación completa de sistema ERP para cadena de tiendas con 15 sucursales, integrando inventarios, ventas, finanzas y RRHH.",
+      tech: ["React", "Node.js", "PostgreSQL", "AWS"],
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop"
+    }, {
+      title: "App Móvil Logística",
+      category: "Aplicación Móvil",
+      description: "Aplicación móvil para gestión de entregas en tiempo real con geolocalización y notificaciones push.",
+      tech: ["React Native", "Firebase", "Google Maps API"],
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=250&fit=crop"
+    }, {
+      title: "Plataforma E-learning",
+      category: "Desarrollo Web",
+      description: "Portal educativo con sistema de videoconferencias, evaluaciones automáticas y seguimiento de progreso.",
+      tech: ["Vue.js", "WebRTC", "MongoDB", "Socket.io"],
+      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=250&fit=crop"
+    }, {
+      title: "Dashboard Analytics",
+      category: "Inteligencia de Datos",
+      description: "Sistema de análisis de datos con visualizaciones interactivas para toma de decisiones empresariales.",
+      tech: ["D3.js", "Python", "FastAPI", "Redis"],
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=250&fit=crop"
+    }, {
+      title: "Infraestructura Cloud",
+      category: "Solución de Infraestructura",
+      description: "Migración completa a la nube con alta disponibilidad, escalabilidad automática y respaldo automatizado.",
+      tech: ["AWS", "Docker", "Kubernetes", "Terraform"],
+      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=250&fit=crop"
+    }, {
+      title: "Sistema de Seguridad",
+      category: "Ciberseguridad",
+      description: "Implementación de sistema de seguridad multicapa con autenticación biométrica y monitoreo 24/7.",
+      tech: ["Blockchain", "Biometrics API", "Machine Learning"],
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=250&fit=crop"
+    }
+  ];
+
+  return (
+    <section 
+      id="proyectos" 
+      className="py-20 font-corporate relative"
+      style={{
+        backgroundImage: `url('/lovable-uploads/badb450a-4b30-45ba-a43a-3a59109b054f.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'fixed'
+      }}
+    >
+      {/* Overlay para mejorar legibilidad */}
+      <div className="absolute inset-0 bg-slate-950/80"></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4 font-corporate">Nuestros Proyectos</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto font-corporate">
@@ -90,6 +108,8 @@ const Projects = () => {
           </Button>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Projects;
