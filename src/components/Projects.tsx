@@ -61,7 +61,7 @@ const Projects = () => {
               </div>
               
               <CardHeader>
-                <CardTitle className="text-xl text-gray-900 group-hover:text-carvil-blue-600 transition-colors font-corporate">
+                <CardTitle className="text-xl group-hover:text-carvil-blue-600 transition-colors font-corporate text-zinc-50">
                   {project.title}
                 </CardTitle>
               </CardHeader>

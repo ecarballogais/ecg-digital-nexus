@@ -87,8 +87,8 @@ const Services = () => {
         {/* Overlay para mejorar legibilidad */}
         <div className="relative z-10 backdrop-blur-sm rounded-2xl p-8 bg-transparent">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4 font-corporate">Nuestros Servicios</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto font-corporate">
+            <h2 className="text-4xl font-bold mb-4 font-corporate text-zinc-50">Nuestros Servicios</h2>
+            <p className="text-xl max-w-3xl mx-auto font-corporate text-zinc-400">
               Ofrecemos soluciones tecnológicas integrales, desde sistemas empresariales completos hasta 
               herramientas específicas que impulsan la transformación digital de tu negocio.
             </p>
@@ -100,7 +100,7 @@ const Services = () => {
               <div className="w-12 h-12 bg-carvil-blue-100 rounded-lg flex items-center justify-center mr-4">
                 <Lightbulb className="w-6 h-6 text-carvil-blue-600" />
               </div>
-              <h3 className="text-3xl font-bold text-gray-900 font-corporate">Soluciones Globales</h3>
+              <h3 className="text-3xl font-bold font-corporate text-slate-50">Soluciones Globales</h3>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {globalSolutions.map((service, index) => <Card key={index} className="hover:shadow-lg transition-all duration-300 group animate-fade-in">
@@ -123,7 +123,7 @@ const Services = () => {
               <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mr-4">
                 <Cog className="w-6 h-6 text-orange-600" />
               </div>
-              <h3 className="text-3xl font-bold text-gray-900 font-corporate">Soluciones Parciales</h3>
+              <h3 className="text-3xl font-bold font-corporate text-zinc-50">Soluciones Parciales</h3>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {partialSolutions.map((service, index) => <Card key={index} className="hover:shadow-lg transition-all duration-300 group animate-fade-in">
@@ -146,7 +146,7 @@ const Services = () => {
               <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
                 <Brain className="w-6 h-6 text-purple-600" />
               </div>
-              <h3 className="text-3xl font-bold text-gray-900 font-corporate">Tecnologías Emergentes</h3>
+              <h3 className="text-3xl font-bold font-corporate text-zinc-50">Tecnologías Emergentes</h3>
             </div>
             <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-4">
               {emergingTech.map((tech, index) => <div key={index} className="bg-gradient-to-br from-purple-50 to-blue-50 p-6 rounded-lg text-center hover:scale-105 transition-transform animate-fade-in bg-inherit">
@@ -162,7 +162,7 @@ const Services = () => {
               <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mr-4">
                 <Palette className="w-6 h-6 text-pink-600" />
               </div>
-              <h3 className="text-3xl font-bold text-gray-900 font-corporate">Diseño y Marketing Digital</h3>
+              <h3 className="text-3xl font-bold font-corporate text-zinc-50">Diseño y Marketing Digital</h3>
             </div>
             <div className="grid md:grid-cols-2 gap-6">
               <Card className="hover:shadow-lg transition-all duration-300 animate-fade-in">
@@ -170,7 +170,7 @@ const Services = () => {
                   <div className="mb-4">
                     <Globe className="w-8 h-8 text-pink-600" />
                   </div>
-                  <CardTitle className="text-xl text-gray-900 font-corporate">Páginas Web Profesionales</CardTitle>
+                  <CardTitle className="text-xl font-corporate text-zinc-50">Páginas Web Profesionales</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 font-corporate">
@@ -183,7 +183,7 @@ const Services = () => {
                   <div className="mb-4">
                     <Smartphone className="w-8 h-8 text-pink-600" />
                   </div>
-                  <CardTitle className="text-xl text-gray-900 font-corporate">Contenido Visual y Animaciones</CardTitle>
+                  <CardTitle className="text-xl font-corporate text-zinc-50">Contenido Visual y Animaciones</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 font-corporate">
