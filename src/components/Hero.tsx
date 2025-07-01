@@ -25,10 +25,7 @@ const Hero = () => {
               Transformamos tu negocio con 
               <span className="text-carvil-blue-500 block">soluciones tecnológicas guiadas por IA</span>
             </h1>
-            <p className="text-xl text-carvil-steel-700 leading-relaxed text-zinc-950 font-corporate">
-              Somos CARVIL Technology Solutions, tu socio estratégico en la transformación digital empresarial. 
-              Ofrecemos tecnología innovadora y adaptable para impulsar tu crecimiento.
-            </p>
+            <p className="text-xl text-carvil-steel-700 leading-relaxed text-zinc-950 font-corporate">We are CARVIL Technology Solutions, your strategic partner in business digital transformation. We offer innovative and adaptable technology to drive your growth.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button onClick={() => scrollToSection('servicios')} className="bg-gradient-carvil text-white px-8 py-3 text-lg hover:shadow-lg transition-all hover:shadow-carvil-navy-200 font-corporate">
                 Explorar Servicios
