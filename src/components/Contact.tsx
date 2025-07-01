@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -22,10 +21,25 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Simular envío del formulario
+    // Crear enlace de mailto con los datos del formulario
+    const subject = `Consulta de ${formData.name} - ${formData.service || 'Servicio General'}`;
+    const body = `
+Nombre: ${formData.name}
+Email: ${formData.email}
+Empresa: ${formData.company}
+Teléfono: ${formData.phone}
+Servicio de interés: ${formData.service}
+
+Mensaje:
+${formData.message}
+    `;
+    
+    const mailtoLink = `mailto:edu@ecarballogais.es?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.open(mailtoLink, '_blank');
+    
     toast({
       title: "¡Mensaje enviado!",
-      description: "Nos pondremos en contacto contigo pronto."
+      description: "Se ha abierto tu cliente de correo para enviar la consulta."
     });
     
     // Limpiar formulario
@@ -150,7 +164,7 @@ const Contact = () => {
                 </div>
 
                 <Button type="submit" className="w-full bg-gradient-carvil text-white font-corporate">
-                  Enviar Solicitud
+                  Enviar Solicitud a edu@ecarballogais.es
                 </Button>
               </form>
             </CardContent>
