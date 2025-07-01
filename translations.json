@@ -1,0 +1,26 @@
+{
+  "es": {
+    "title": "CARVIL Soluciones Tecnológicas",
+    "subtitle": "Potenciamos tu negocio con inteligencia artificial",
+    "section1": "Agentes Inteligentes con n8n",
+    "section2": "Web profesional & eCommerce + ERP",
+    "section3": "Chatbots Web & WhatsApp",
+    "section4": "Publicación Automática en Redes",
+    "section5": "Diseño Gráfico & Branding",
+    "section6": "Mantenimiento y Soporte continuo",
+    "contact": "Contáctanos",
+    "send_request": "Enviar solicitud"
+  },
+  "en": {
+    "title": "CARVIL Technology Solutions",
+    "subtitle": "We empower your business with artificial intelligence",
+    "section1": "Intelligent Agents with n8n",
+    "section2": "Professional Web & eCommerce + ERP",
+    "section3": "Web & WhatsApp Chatbots",
+    "section4": "Automatic Social Media Publishing",
+    "section5": "Graphic Design & Branding",
+    "section6": "Maintenance and Continuous Support",
+    "contact": "Contact Us",
+    "send_request": "Send Request"
+  }
+}
