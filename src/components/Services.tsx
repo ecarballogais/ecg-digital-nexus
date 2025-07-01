@@ -88,7 +88,7 @@ const Services = () => {
         <div className="relative z-10 backdrop-blur-sm rounded-2xl p-8 bg-transparent">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4 font-corporate text-zinc-50">Nuestros Servicios</h2>
-            <p className="text-xl max-w-3xl mx-auto font-corporate text-zinc-400">
+            <p className="text-xl max-w-3xl mx-auto font-corporate text-zinc-300">
               Ofrecemos soluciones tecnológicas integrales, desde sistemas empresariales completos hasta 
               herramientas específicas que impulsan la transformación digital de tu negocio.
             </p>
